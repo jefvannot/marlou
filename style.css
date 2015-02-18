@@ -246,13 +246,20 @@ nav {
 /*** LOGO MARLOU***/
 
 .logo-marlou {
-	padding-top: 3px;
+	padding-top: 4px;
+	left: -12px;
 }
 
 .navbar-link {
 	font-size: 30px;
 	/*margin-left: 25px;*/
 	vertical-align: middle;
+}
+
+#logo {
+	height: 41px;
+	padding-top: 10px;
+	padding-left: 20px;
 }
 
 /*** BURGER ***/
