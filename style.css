@@ -120,6 +120,7 @@ button {
 
 a, a:active, a:visited {
 	color: #0B0B61;
+	-moz-transition: color .2s ease-in-out;
 	-webkit-transition: color .2s ease-in-out;
 	transition: color .2s ease-in-out;
 	text-decoration: none;
@@ -130,6 +131,7 @@ font: 1em/1.68em Lato,sans-serif;
 color: #000;
 margin: 0 0 1em;
 font-weight: 400;
+-moz-font-smoothing: antialiased;
 -webkit-font-smoothing: antialiased;
 }
 
@@ -167,6 +169,7 @@ header a:hover {
 	/*color: #F2EBEC;*/
 	text-decoration: none;
 	transition: 0.9s;
+	-moz-animation: back-and-forth 2s ease-in-out;
 	-webkit-animation: back-and-forth 2s ease-in-out;
 }
 
@@ -184,6 +187,7 @@ header .row {
 	right: 0;
 	z-index: 9999;
 	width: 100%;
+	-moz-transition: top .2s ease-in-out;
 	-webkit-transition: top .2s ease-in-out;
 	transition: top .2s ease-in-out;
 }
@@ -673,7 +677,92 @@ nav {
 	-moz-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 }
- 
+
+/********* Shop Coming Soon ********/
+
+.shop {
+	background-color: #F2EBEC;
+	display: block;
+	height: 100%;
+}
+
+@-webkit-keyframes shine {
+	0% {
+		color: #786600;
+	}
+	50% {
+		color: #AB9200;
+	}
+	100% {
+		color: #786600;
+	}
+}
+
+.shop p {
+	color: #786600;
+	font-family: 'Heiti SC', 'Lato', Helvetica, Arial, Tahoma;
+	/*font-size: 4em;*/
+	/*padding-top: 3em;*/
+	width: 100%;
+	display: inline-block;
+	/*line-height: 15em;*/
+	text-align: center;
+    vertical-align: middle;
+    -moz-animation: shine 2s infinite alternate ease-in-out;
+	-webkit-animation: shine 2s infinite alternate ease-in-out;
+}
+
+/*
+/*** iphone 4 et 5 ***
+@media (max-width: 350px) {
+	.coming-soon p {
+		font-size: 12px;
+	}
+}
+
+/*** iphone 6 ***
+@media (min-width: 350px) {
+	.coming-soon p {
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 480px) {
+	.coming-soon p {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 350px) and (orientation: landscape) {
+	.coming-soon p {
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 350px) and (orientation: landscape) {
+	.coming-soon p {
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 768px) {
+	.coming-soon p {
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 992px) {
+	.coming-soon p {
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.coming-soon p {
+		font-size: 4em;
+	}
+}
+*/
 /********* ARROWS ***************/
 
 /*
